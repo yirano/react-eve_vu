@@ -1,20 +1,45 @@
-import React from 'react';
-import './header.scss';
+import React, { Component } from "react";
+import "./header.scss";
 
-export default function hero() {
-	return (
-		<header className="header" id="header">
-			<h1 className="headerTitle">eV</h1>
-			<button className="menuIcon">
-				<span />
-				<span />
-			</button>
-			<nav>
-				<ul>
-					<li>a</li>
-				</ul>
-			</nav>
-			<div className="hero" />
-		</header>
-	);
+export class header extends Component {
+  state = {
+    menuActive: true
+  };
+
+  handleClick = () => {
+    this.setState(prevState => {
+      return (prevState.menuActive = !prevState.menuActive);
+    });
+  };
+  render() {
+    return (
+      <header className="header" id="header">
+        <h1 className="headerTitle">eV</h1>
+        <button className="menuIcon" onClick={this.handleClick}>
+          <span />
+          <span />
+        </button>
+        <nav className={this.state.menuActive ? "show" : "hide"}>
+          <ul>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">portfolio</a>
+            </li>
+            <li>
+              <a href="/">about</a>
+            </li>
+            <li>
+              <a href="/">contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="hero" />
+      </header>
+    );
+  }
 }
+
+export default header;
