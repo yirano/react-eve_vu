@@ -19,7 +19,8 @@ export class header extends Component {
 					<span />
 					<span />
 				</button>
-				<nav className={this.state.menuActive ? 'show' : 'hide'}>
+				<nav className={this.state.menuActive ? 'show' : 'hide'} onClick={this.handleClick}>
+					<svg height="32" width="32" />
 					<ul>
 						<li>
 							<a href="/">home</a>
