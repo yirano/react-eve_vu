@@ -1,10 +1,21 @@
 @import '../../../modules/font';
 
+@keyframes opac {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
 header {
 	position: relative;
 	width: 100%;
 	height: 100vh;
 	padding: 73px 12px 0px;
+	animation: opac 1000ms linear;
 
 	.hero {
 		text-align: center;
@@ -58,7 +69,7 @@ header {
 	}
 
 	.hide {
-		right: -100%;
+		right: -120%;
 		transition: all 300ms ease-in;
 	}
 
