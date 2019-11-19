@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Trench from '../../imgs/trench.jpeg';
 import './header.scss';
 
 export class header extends Component {
@@ -60,7 +61,11 @@ export class header extends Component {
 					</ul>
 				</nav>
 
-				<div className="hero" />
+				<div className="hero">
+					<div className="slide">
+						<img src={Trench} alt="woman in trench coat" />
+					</div>
+				</div>
 			</header>
 		);
 	}

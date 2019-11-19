@@ -35,12 +35,17 @@ header {
 		text-align: center;
 		height: 100%;
 		width: 90%;
-		background: url('../../imgs/hero.jpeg') no-repeat;
-		background-position: center;
-		background-size: cover;
-
-		overflow: hidden;
+		// background: url('../../imgs/hero.jpeg') no-repeat;
+		// background-position: center;
+		// background-size: cover;
 		margin: 0 auto;
+
+		.slide {
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 	.headerTitle {
