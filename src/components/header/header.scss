@@ -2,11 +2,11 @@
 
 @keyframes opac {
 	0% {
-		opacity: 0
+		opacity: 0;
 	}
 
 	100% {
-		opacity: 1
+		opacity: 1;
 	}
 }
 
@@ -16,6 +16,13 @@ header {
 	height: 100vh;
 	padding: 73px 12px 0px;
 	animation: opac 1000ms linear;
+
+	h1 {
+		// width: auto;
+		span {
+			display: inline-block;
+		}
+	}
 
 	.hero {
 		text-align: center;

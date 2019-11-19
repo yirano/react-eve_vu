@@ -3,7 +3,8 @@ import './header.scss';
 
 export class header extends Component {
 	state = {
-		menuActive: false
+		menuActive: false,
+		hide: true
 	};
 
 	handleClick = () => {
@@ -11,10 +12,38 @@ export class header extends Component {
 			return (prevState.menuActive = !prevState.menuActive);
 		});
 	};
+
+	handleScroll = () => {
+		this.setState((prevState) => {
+			if (window.scrollY > 10) {
+				prevState.hide = true;
+			} else {
+				prevState.hide = false;
+			}
+
+			return prevState.hide;
+		});
+	};
+
+	componentDidMount() {
+		window.addEventListener('scroll', this.handleScroll);
+	}
 	render() {
+		const hide = {
+			width: '0px',
+			overflow: 'hidden'
+		};
+
+		const show = {
+			width: '100%'
+		};
 		return (
 			<header className="header" id="header">
-				<h1 className="headerTitle">eV</h1>
+				<h1 className="headerTitle">
+					e<span onScroll={this.handleScroll} style={this.state.hide ? hide : show}>
+						ve&nbsp;
+					</span>V<span>u</span>
+				</h1>
 				<button className="menuIcon" onClick={this.handleClick}>
 					<span />
 					<span />
