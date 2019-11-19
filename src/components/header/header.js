@@ -4,7 +4,7 @@ import './header.scss';
 export class header extends Component {
 	state = {
 		menuActive: false,
-		hide: true
+		hide: false
 	};
 
 	handleClick = () => {
