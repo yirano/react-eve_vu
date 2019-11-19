@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f22c129a435f3147d25038597dcc693f",
+    "revision": "69fcfcf3364dfba813146e3ada8ec66f",
     "url": "/react-eve_vu/index.html"
   },
   {
-    "revision": "5b922cc4c3db67ffbf39",
+    "revision": "07e1322de21e4a7ee0bf",
     "url": "/react-eve_vu/static/css/main.cc0c4282.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-eve_vu/static/js/2.95257baf.chunk.js"
   },
   {
-    "revision": "5b922cc4c3db67ffbf39",
-    "url": "/react-eve_vu/static/js/main.3fe4c108.chunk.js"
+    "revision": "07e1322de21e4a7ee0bf",
+    "url": "/react-eve_vu/static/js/main.14ae0ded.chunk.js"
   },
   {
     "revision": "bfaa86d66f51046f1c26",
