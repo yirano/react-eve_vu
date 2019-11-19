@@ -29,20 +29,14 @@ export class header extends Component {
 		window.addEventListener('scroll', this.handleScroll);
 	}
 	render() {
-		const hide = {
-			width: '0px',
-			overflow: 'hidden'
-		};
-
-		const show = {
-			width: '100%'
-		};
 		return (
 			<header className="header" id="header">
 				<h1 className="headerTitle">
-					e<span onScroll={this.handleScroll} style={this.state.hide ? hide : show}>
+					e<span onScroll={this.handleScroll} className={this.state.hide ? 'hide' : null}>
 						ve&nbsp;
-					</span>V<span>u</span>
+					</span>V<span onScroll={this.handleScroll} className={this.state.hide ? 'hide' : null}>
+						u
+					</span>
 				</h1>
 				<button className="menuIcon" onClick={this.handleClick}>
 					<span />

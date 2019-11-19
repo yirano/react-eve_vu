@@ -1,5 +1,4 @@
 @import '../../../modules/font';
-
 @keyframes opac {
 	0% {
 		opacity: 0;
@@ -18,9 +17,18 @@ header {
 	animation: opac 1000ms linear;
 
 	h1 {
-		// width: auto;
 		span {
 			display: inline-block;
+			// width: 0px;
+			width: 35px;
+			line-height: 21px;
+			overflow: hidden;
+			transition: width 400ms linear;
+		}
+		.hide {
+			width: 0px;
+			overflow: hidden;
+			transition: width 400ms linear;
 		}
 	}
 
@@ -38,7 +46,7 @@ header {
 
 	.headerTitle {
 		font-family: $header-font;
-		position: absolute;
+		position: fixed;
 		top: 29px;
 		left: 71px;
 		font-weight: 400;
@@ -66,6 +74,7 @@ header {
 
 				a {
 					text-decoration: none;
+					color: #000;
 
 					&:visited {
 						color: inherit;
@@ -86,7 +95,7 @@ header {
 	}
 
 	.menuIcon {
-		position: absolute;
+		position: fixed;
 		width: 24px;
 		outline: none;
 		border: none;
@@ -94,6 +103,7 @@ header {
 		right: 71px;
 		cursor: pointer;
 		z-index: 999;
+		background-color: transparent;
 
 		span {
 			display: block;
