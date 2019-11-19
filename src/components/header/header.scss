@@ -23,12 +23,12 @@ header {
 			width: 35px;
 			line-height: 21px;
 			overflow: hidden;
-			transition: width 400ms linear;
+			transition: width 300ms linear;
 		}
 		.hide {
 			width: 0px;
 			overflow: hidden;
-			transition: width 400ms linear;
+			transition: width 300ms linear;
 		}
 	}
 
