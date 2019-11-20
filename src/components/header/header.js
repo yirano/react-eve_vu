@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Trench from '../../imgs/trench.jpeg';
+import Bouquet from '../../imgs/woman-bouquet.jpeg';
 import './header.scss';
 
 export class header extends Component {
@@ -62,8 +63,14 @@ export class header extends Component {
 				</nav>
 
 				<div className="hero">
-					<div className="slide">
+					{/* <button className="next" onClick={this.nextSlide}> */}
+					{/* Next
+					</button> */}
+					<div className="slide current">
 						<img src={Trench} alt="woman in trench coat" />
+					</div>
+					<div className="slide">
+						<img src={Bouquet} alt="woman with a bouquet" />
 					</div>
 				</div>
 			</header>
