@@ -51,7 +51,17 @@ header {
 				width: 100%;
 				height: auto;
 			}
+			.change {
+				.Gallery__NavigationArrow {
+					button {
+						height: 100%;
+						border: 2px solid red;
+						width: 200px;
+					}
+				}
+			}
 		}
+
 		.current {
 			left: 0;
 		}

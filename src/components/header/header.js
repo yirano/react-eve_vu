@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Trench from '../../imgs/trench.jpeg';
 import Bouquet from '../../imgs/woman-bouquet.jpeg';
 import images from '../images-library/images.js';
-import { Gallery, GalleryImage } from 'react-gesture-gallery';
 import './header.scss';
 
 export class header extends Component {
@@ -65,18 +64,7 @@ export class header extends Component {
 					</ul>
 				</nav>
 
-				<div className="hero">
-					<Gallery
-						index={this.state.count}
-						onRequestChange={(i) => {
-							this.setState({ count: i });
-						}}
-					>
-						{images.map((image) => {
-							return <GalleryImage key={image.id} src={image.imgSrc} />;
-						})}
-					</Gallery>
-				</div>
+				<div className="hero" />
 			</header>
 		);
 	}
