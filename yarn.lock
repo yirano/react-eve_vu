@@ -4406,6 +4406,11 @@ gh-pages@^2.1.1:
     graceful-fs "^4.1.11"
     rimraf "^2.6.2"
 
+gitignore@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/gitignore/-/gitignore-0.6.0.tgz#8518e39d1e12f896eb0971e0f8c982e616ed765e"
+  integrity sha1-hRjjnR4S+JbrCXHg+MmC5hbtdl4=
+
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"

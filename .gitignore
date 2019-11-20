@@ -11,9 +11,6 @@
 # production
 /build
 
-# design reference
-/portfolio-v2.0
-
 # misc
 .DS_Store
 .env.local
