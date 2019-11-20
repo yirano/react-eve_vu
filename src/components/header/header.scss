@@ -39,11 +39,10 @@ header {
 		position: relative;
 
 		.slide {
-			position: absolute;
+			// position: absolute;
 			overflow: hidden;
 			height: 100%;
-			top: 0;
-			left: 2000px;
+			// top: 0;
 			z-index: -99999;
 
 			img {
@@ -51,114 +50,101 @@ header {
 				width: 100%;
 				height: auto;
 			}
-			.change {
-				.Gallery__NavigationArrow {
-					button {
-						height: 100%;
-						border: 2px solid red;
-						width: 200px;
-					}
+		}
+	}
+}
+
+.headerTitle {
+	font-family: $header-font;
+	position: fixed;
+	top: 29px;
+	left: 71px;
+	font-weight: 400;
+}
+
+nav {
+	position: fixed;
+	display: flex;
+	top: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.3em;
+	z-index: 999;
+	cursor: url('../../imgs/icons/cancel.png'), auto;
+
+	ul {
+		list-style: none;
+		padding: 50px 100px;
+		text-align: center;
+
+		li {
+			padding: 13px 50px;
+
+			a {
+				padding: 10px 50px;
+				text-decoration: none;
+				color: #000;
+
+				&:visited {
+					color: inherit;
 				}
 			}
 		}
+	}
+}
 
-		.current {
+.hide {
+	right: -120%;
+	transition: all 400ms ease-in-out;
+}
+
+.show {
+	right: 0;
+	transition: all 400ms ease-in-out;
+}
+
+.menuIcon {
+	position: fixed;
+	width: 24px;
+	outline: none;
+	border: none;
+	top: 29px;
+	right: 71px;
+	cursor: pointer;
+	z-index: 999;
+	background-color: transparent;
+
+	span {
+		display: block;
+		height: 9px;
+		border-bottom: 2px solid black;
+
+		&:nth-child(1) {
+			position: relative;
+			width: 18px;
+			left: 6px;
+		}
+
+		&:nth-child(2) {
+			width: 24px;
+		}
+	}
+}
+
+.menuIcon:hover {
+	span {
+		&:nth-child(1) {
+			width: 24px;
 			left: 0;
 		}
-	}
 
-	.headerTitle {
-		font-family: $header-font;
-		position: fixed;
-		top: 29px;
-		left: 71px;
-		font-weight: 400;
-	}
-
-	nav {
-		position: fixed;
-		display: flex;
-		top: 0;
-		width: 100vw;
-		height: 100%;
-		background-color: #fff;
-		align-items: center;
-		justify-content: center;
-		font-size: 1.3em;
-		z-index: 999;
-		cursor: url('../../imgs/icons/cancel.png'), auto;
-
-		ul {
-			list-style: none;
-			padding: 50px 100px;
-			text-align: center;
-
-			li {
-				padding: 13px 50px;
-
-				a {
-					padding: 10px 50px;
-					text-decoration: none;
-					color: #000;
-
-					&:visited {
-						color: inherit;
-					}
-				}
-			}
-		}
-	}
-
-	.hide {
-		right: -120%;
-		transition: all 400ms ease-in-out;
-	}
-
-	.show {
-		right: 0;
-		transition: all 400ms ease-in-out;
-	}
-
-	.menuIcon {
-		position: fixed;
-		width: 24px;
-		outline: none;
-		border: none;
-		top: 29px;
-		right: 71px;
-		cursor: pointer;
-		z-index: 999;
-		background-color: transparent;
-
-		span {
-			display: block;
-			height: 9px;
-			border-bottom: 2px solid black;
-
-			&:nth-child(1) {
-				position: relative;
-				width: 18px;
-				left: 6px;
-			}
-
-			&:nth-child(2) {
-				width: 24px;
-			}
-		}
-	}
-
-	.menuIcon:hover {
-		span {
-			&:nth-child(1) {
-				width: 24px;
-				left: 0;
-			}
-
-			&:nth-child(2) {
-				position: relative;
-				width: 18px;
-				left: 6px;
-			}
+		&:nth-child(2) {
+			position: relative;
+			width: 18px;
+			left: 6px;
 		}
 	}
 }
