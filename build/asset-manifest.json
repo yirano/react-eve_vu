@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-eve_vu/static/css/main.064e82ff.chunk.css",
-    "main.js": "/react-eve_vu/static/js/main.1075d870.chunk.js",
-    "main.js.map": "/react-eve_vu/static/js/main.1075d870.chunk.js.map",
+    "main.js": "/react-eve_vu/static/js/main.751c298d.chunk.js",
+    "main.js.map": "/react-eve_vu/static/js/main.751c298d.chunk.js.map",
     "runtime-main.js": "/react-eve_vu/static/js/runtime-main.8fe8e6bf.js",
     "runtime-main.js.map": "/react-eve_vu/static/js/runtime-main.8fe8e6bf.js.map",
-    "static/js/2.b1b7c4e5.chunk.js": "/react-eve_vu/static/js/2.b1b7c4e5.chunk.js",
-    "static/js/2.b1b7c4e5.chunk.js.map": "/react-eve_vu/static/js/2.b1b7c4e5.chunk.js.map",
+    "static/js/2.567a5fec.chunk.js": "/react-eve_vu/static/js/2.567a5fec.chunk.js",
+    "static/js/2.567a5fec.chunk.js.map": "/react-eve_vu/static/js/2.567a5fec.chunk.js.map",
     "index.html": "/react-eve_vu/index.html",
-    "precache-manifest.c01e37758e025a79d6736691cde8f1bb.js": "/react-eve_vu/precache-manifest.c01e37758e025a79d6736691cde8f1bb.js",
+    "precache-manifest.a61b612fedb808cc9c62c9879b700e76.js": "/react-eve_vu/precache-manifest.a61b612fedb808cc9c62c9879b700e76.js",
     "service-worker.js": "/react-eve_vu/service-worker.js",
     "static/css/main.064e82ff.chunk.css.map": "/react-eve_vu/static/css/main.064e82ff.chunk.css.map",
     "static/media/trench.jpeg": "/react-eve_vu/static/media/trench.e8c27594.jpeg",
@@ -16,8 +16,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8fe8e6bf.js",
-    "static/js/2.b1b7c4e5.chunk.js",
+    "static/js/2.567a5fec.chunk.js",
     "static/css/main.064e82ff.chunk.css",
-    "static/js/main.1075d870.chunk.js"
+    "static/js/main.751c298d.chunk.js"
   ]
 }
