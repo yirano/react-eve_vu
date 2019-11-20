@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import Trench from '../../imgs/trench.jpeg';
 import Bouquet from '../../imgs/woman-bouquet.jpeg';
+import images from '../images-library/images.js';
+import { Gallery, GalleryImage } from 'react-gesture-gallery';
 import './header.scss';
 
 export class header extends Component {
 	state = {
 		menuActive: false,
-		hide: false
+		hide: false,
+		count: 0
 	};
 
 	handleClick = () => {
@@ -63,15 +66,16 @@ export class header extends Component {
 				</nav>
 
 				<div className="hero">
-					{/* <button className="next" onClick={this.nextSlide}> */}
-					{/* Next
-					</button> */}
-					<div className="slide current">
-						<img src={Trench} alt="woman in trench coat" />
-					</div>
-					<div className="slide">
-						<img src={Bouquet} alt="woman with a bouquet" />
-					</div>
+					<Gallery
+						index={this.state.count}
+						onRequestChange={(i) => {
+							this.setState({ count: i });
+						}}
+					>
+						{images.map((image) => {
+							return <GalleryImage key={image.id} src={image.imgSrc} />;
+						})}
+					</Gallery>
 				</div>
 			</header>
 		);
