@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/react-eve_vu/static/css/main.064e82ff.chunk.css",
-    "main.js": "/react-eve_vu/static/js/main.751c298d.chunk.js",
-    "main.js.map": "/react-eve_vu/static/js/main.751c298d.chunk.js.map",
+    "main.css": "/react-eve_vu/static/css/main.c8cc4dc1.chunk.css",
+    "main.js": "/react-eve_vu/static/js/main.5d4d603b.chunk.js",
+    "main.js.map": "/react-eve_vu/static/js/main.5d4d603b.chunk.js.map",
     "runtime-main.js": "/react-eve_vu/static/js/runtime-main.8fe8e6bf.js",
     "runtime-main.js.map": "/react-eve_vu/static/js/runtime-main.8fe8e6bf.js.map",
-    "static/js/2.567a5fec.chunk.js": "/react-eve_vu/static/js/2.567a5fec.chunk.js",
-    "static/js/2.567a5fec.chunk.js.map": "/react-eve_vu/static/js/2.567a5fec.chunk.js.map",
+    "static/js/2.89bd625d.chunk.js": "/react-eve_vu/static/js/2.89bd625d.chunk.js",
+    "static/js/2.89bd625d.chunk.js.map": "/react-eve_vu/static/js/2.89bd625d.chunk.js.map",
     "index.html": "/react-eve_vu/index.html",
-    "precache-manifest.a61b612fedb808cc9c62c9879b700e76.js": "/react-eve_vu/precache-manifest.a61b612fedb808cc9c62c9879b700e76.js",
+    "precache-manifest.db945abcb89546f7199204e02d5b065d.js": "/react-eve_vu/precache-manifest.db945abcb89546f7199204e02d5b065d.js",
     "service-worker.js": "/react-eve_vu/service-worker.js",
-    "static/css/main.064e82ff.chunk.css.map": "/react-eve_vu/static/css/main.064e82ff.chunk.css.map",
-    "static/media/trench.jpeg": "/react-eve_vu/static/media/trench.e8c27594.jpeg",
-    "static/media/woman-bouquet.jpeg": "/react-eve_vu/static/media/woman-bouquet.0b119992.jpeg"
+    "static/css/main.c8cc4dc1.chunk.css.map": "/react-eve_vu/static/css/main.c8cc4dc1.chunk.css.map",
+    "static/media/leaf-woman.jpeg": "/react-eve_vu/static/media/leaf-woman.c717dacd.jpeg",
+    "static/media/shadow.jpeg": "/react-eve_vu/static/media/shadow.7c62673d.jpeg",
+    "static/media/trench.jpeg": "/react-eve_vu/static/media/trench.e8c27594.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.8fe8e6bf.js",
-    "static/js/2.567a5fec.chunk.js",
-    "static/css/main.064e82ff.chunk.css",
-    "static/js/main.751c298d.chunk.js"
+    "static/js/2.89bd625d.chunk.js",
+    "static/css/main.c8cc4dc1.chunk.css",
+    "static/js/main.5d4d603b.chunk.js"
   ]
 }
