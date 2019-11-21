@@ -52,6 +52,36 @@ header {
 			height: 100%;
 			width: 100%;
 			margin-right: 90px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 60%;
+			animation: opac 700ms ease-in-out;
+		}
+
+		.heroBtnContainer {
+			position: absolute;
+			height: 100%;
+			width: 90%;
+			.prevBtn,
+			.nextBtn {
+				position: absolute;
+				height: 100%;
+				width: 250px;
+				background: transparent;
+				outline: none;
+				border: none;
+			}
+
+			.prevBtn {
+				left: 0;
+				cursor: url('../../imgs/icons/prevArrow.png'), auto;
+			}
+
+			.nextBtn {
+				cursor: url('../../imgs/icons/arrow.png'), auto;
+				right: 0;
+				top: 0;
+			}
 		}
 	}
 }

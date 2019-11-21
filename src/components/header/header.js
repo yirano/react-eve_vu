@@ -35,20 +35,27 @@ export class header extends Component {
 	prevSlide = () => {
 		if (this.state.currentIndex === 0) {
 			return this.setState({
-				currentIndex: this.state.images.length - 1
+				currentIndex: this.state.images.length - 1,
+				translateValue: 0
 			});
 		}
 		this.setState((prevState) => ({
-			currentIndex: prevState.currentIndex - 1
+			currentIndex: prevState.currentIndex - 1,
+			translateValue: -this.slideWidth()
 		}));
 	};
 
 	nextSlide = () => {
+		if (this.state.images[this.state.currentIndex]) {
+			this.setState({ translateValue: this.slideWidth() });
+		}
 		if (this.state.currentIndex === this.state.images.length - 1) {
 			return this.setState({
-				currentIndex: 0
+				currentIndex: 0,
+				translateValue: 0
 			});
 		}
+
 		this.setState((prevState) => ({
 			currentIndex: prevState.currentIndex + 1
 		}));
@@ -98,20 +105,10 @@ export class header extends Component {
 
 				<div className="hero">
 					<div className="heroBtnContainer">
-						<button className="prevBtn" onClick={this.prevSlide}>
-							Previous
-						</button>
-						<button className="nextBtn" onClick={this.nextSlide}>
-							Next
-						</button>
+						<button className="prevBtn" onClick={this.prevSlide} />
+						<button className="nextBtn" onClick={this.nextSlide} />
 					</div>
-					<div
-						className="sliderContainer"
-						style={{
-							transform: `translateX(${this.state.translateValue}px)`,
-							transition: 'transform ease-out 0.45s'
-						}}
-					>
+					<div className="sliderContainer" style={{ opacity: '1', transition: 'opacity 600ms linear' }}>
 						<Slide image={this.state.images[this.state.currentIndex]} />;
 					</div>
 				</div>
